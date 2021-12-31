@@ -1,0 +1,11 @@
+.header {
+  padding: 3.2rem 2.4rem 7.2rem;
+  display: flex;
+  justify-content: space-between;
+  background-image: url("../assets/mobile/bg-pattern-header.svg");
+}
+.toggle-theme-container {
+  display: flex;
+  align-items: center;
+  column-gap: 1.6rem;
+}
