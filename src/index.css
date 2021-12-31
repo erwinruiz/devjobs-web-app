@@ -1,13 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  /* Primary Colors */
+  --violet: #5964e0;
+  --light-violet: #939bf4;
+  --very-dark-blue: #19202d;
+  --midnight: #121721;
+
+  /* Secondary Colors */
+  --white: #ffffff;
+  --light-grey: #f4f6f8;
+  --gray: #9daec2;
+  --dark-grey: #6e8098;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1REM = 10px */
+}
+*,
+*:before,
+s *:after {
+  box-sizing: inherit;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  font-weight: 400;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Globals */
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+h1 {
+  font-size: 2.8rem;
+  line-height: 3.4rem;
+}
+h2 {
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+}
+h3 {
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+h4 {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
 }
