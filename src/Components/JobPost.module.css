@@ -1,0 +1,45 @@
+.container {
+  background-color: var(--white);
+  padding: 4.9rem 0 3.2rem 3.2rem;
+  border-radius: 0.6rem;
+}
+.company-logo-container {
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5rem;
+  position: absolute;
+  margin-top: -7.4rem;
+}
+.post-time-job-type {
+  display: flex;
+  align-items: center;
+  column-gap: 1.2rem;
+  margin-bottom: 1.6rem;
+}
+.post-time-job-type p {
+  color: var(--dark-grey);
+  line-height: 1.6rem;
+}
+.post-time-job-type .point {
+  width: 0.4rem;
+  height: 0.4rem;
+  background-color: var(--dark-grey);
+  border-radius: 50%;
+}
+.position-name {
+  color: var(--very-dark-blue);
+  line-height: 2rem;
+  margin-bottom: 1.7rem;
+}
+.company-name {
+  color: var(--dark-grey);
+  line-height: 1.6rem;
+  margin-bottom: 4.4rem;
+}
+.country-name {
+  color: var(--violet);
+  line-height: 1.4rem;
+}

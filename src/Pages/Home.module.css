@@ -1,0 +1,10 @@
+.job-posts-container {
+  margin: 5.7rem 2.4rem 3.2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4.9rem;
+}
+.button-container {
+  text-align: center;
+  margin-bottom: 6.2rem;
+}
