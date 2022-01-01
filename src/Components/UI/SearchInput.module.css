@@ -1,0 +1,14 @@
+.input {
+  background-color: var(--search-filter-color);
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  border: none;
+  outline: none;
+  color: var(--search-filter-input-text-color);
+  caret-color: var(--violet);
+}
+.input::placeholder {
+  opacity: 0.5;
+  color: var(--search-filter-input-text-color);
+}

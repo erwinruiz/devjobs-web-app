@@ -1,11 +1,15 @@
-import { Fragment, useEffect, useState } from "react";
+import { Fragment, useEffect, useState, useContext } from "react";
 import classes from "./Home.module.css";
 import JobPost from "../Components/JobPost";
 import SearchFilter from "../Components/SearchFilter";
 import Button from "../Components/UI/Button";
+import { Context } from "../store/context";
+import Backdrop from "../Components/UI/Backdrop";
+import FilterModal from "../Components/UI/FilterModal";
 
 function Home() {
   const [jobs, setJobs] = useState<[]>();
+  const { isModalOpen } = useContext(Context);
 
   useEffect(() => {
     fetch("./data.json")
@@ -48,6 +52,8 @@ function Home() {
       <div className={classes["button-container"]}>
         <Button text="Load More" />
       </div>
+      {isModalOpen && <Backdrop />}
+      {isModalOpen && <FilterModal />}
     </Fragment>
   );
 }

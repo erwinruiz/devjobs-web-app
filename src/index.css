@@ -23,6 +23,8 @@
     --filter-option-logo-color: var(--dark-grey);
     --job-post-color: var(--white);
     --position-title-color: var(--very-dark-blue);
+    --contract-text-color: var(--very-dark-blue);
+    --checkbox-color: var(--very-dark-blue);
   }
 }
 /* Detect if the user has dark color theme */
@@ -34,6 +36,8 @@
     --filter-option-logo-color: var(--white);
     --job-post-color: var(--very-dark-blue);
     --position-title-color: var(--white);
+    --contract-text-color: var(--white);
+    --checkbox-color: var(--white);
   }
 }
 /* Switch to light theme by clicking the icon */
@@ -44,6 +48,8 @@
   --filter-option-logo-color: var(--dark-grey);
   --job-post-color: var(--white);
   --position-title-color: var(--very-dark-blue);
+  --contract-text-color: var(--very-dark-blue);
+  --checkbox-color: var(--very-dark-blue);
 }
 /* Switch to dark theme by clicking the icon */
 [theme-mode="dark"] {
@@ -53,6 +59,8 @@
   --filter-option-logo-color: var(--white);
   --job-post-color: var(--very-dark-blue);
   --position-title-color: var(--white);
+  --contract-text-color: var(--white);
+  --checkbox-color: var(--white);
 }
 
 html {

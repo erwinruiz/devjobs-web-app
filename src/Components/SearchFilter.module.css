@@ -7,20 +7,6 @@
   background-color: var(--search-filter-color);
   border-radius: 0.6rem;
 }
-.container input {
-  background-color: var(--search-filter-color);
-  font-family: "Kumbh Sans", sans-serif;
-  font-size: 1.6rem;
-  line-height: 1.6rem;
-  border: none;
-  outline: none;
-  color: var(--search-filter-input-text-color);
-  caret-color: var(--violet);
-}
-.container input::placeholder {
-  opacity: 0.5;
-  color: var(--search-filter-input-text-color);
-}
 .right-side {
   display: flex;
   align-items: center;
@@ -31,6 +17,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.filter-options:hover {
+  cursor: pointer;
 }
 .filter-options svg path {
   fill: var(--filter-option-logo-color);
@@ -43,10 +32,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 250ms ease-out;
 }
 .search-icon-container:hover {
   cursor: pointer;
 }
-.search-icon-container:active {
+.search-icon-container:hover {
   background-color: var(--light-violet);
 }
