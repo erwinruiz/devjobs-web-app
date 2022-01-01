@@ -1,5 +1,5 @@
 .container {
-  background-color: var(--white);
+  background-color: var(--job-post-color);
   padding: 4.9rem 0 3.2rem 3.2rem;
   border-radius: 0.6rem;
 }
@@ -30,7 +30,7 @@
   border-radius: 50%;
 }
 .position-name {
-  color: var(--very-dark-blue);
+  color: var(--position-title-color);
   line-height: 2rem;
   margin-bottom: 1.7rem;
 }

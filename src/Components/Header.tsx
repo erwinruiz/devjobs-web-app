@@ -14,7 +14,7 @@ function Header() {
         <ToggleSwitch />
         <img src="./assets/desktop/icon-moon.svg" alt="moon icon" />
       </div>
-    </header>
+    </header>   
   );
 }
 

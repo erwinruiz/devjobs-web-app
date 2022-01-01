@@ -13,6 +13,48 @@
   --gray: #9daec2;
   --dark-grey: #6e8098;
 }
+
+/* Detect if the user has light color theme, or not selected one */
+@media (prefers-color-scheme: light), (prefers-color-scheme: no-preference) {
+  :root {
+    --body-background-color: var(--light-grey);
+    --search-filter-color: var(--white);
+    --search-filter-input-text-color: var(--very-dark-blue);
+    --filter-option-logo-color: var(--dark-grey);
+    --job-post-color: var(--white);
+    --position-title-color: var(--very-dark-blue);
+  }
+}
+/* Detect if the user has dark color theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-background-color: var(--midnight);
+    --search-filter-color: var(--very-dark-blue);
+    --search-filter-input-text-color: var(--white);
+    --filter-option-logo-color: var(--white);
+    --job-post-color: var(--very-dark-blue);
+    --position-title-color: var(--white);
+  }
+}
+/* Switch to light theme by clicking the icon */
+[theme-mode="light"] {
+  --body-background-color: var(--light-grey);
+  --search-filter-color: var(--white);
+  --search-filter-input-text-color: var(--very-dark-blue);
+  --filter-option-logo-color: var(--dark-grey);
+  --job-post-color: var(--white);
+  --position-title-color: var(--very-dark-blue);
+}
+/* Switch to dark theme by clicking the icon */
+[theme-mode="dark"] {
+  --body-background-color: var(--midnight);
+  --search-filter-color: var(--very-dark-blue);
+  --search-filter-input-text-color: var(--white);
+  --filter-option-logo-color: var(--white);
+  --job-post-color: var(--very-dark-blue);
+  --position-title-color: var(--white);
+}
+
 html {
   box-sizing: border-box;
   font-size: 62.5%; /* 1REM = 10px */
@@ -28,7 +70,7 @@ body {
   font-size: 1.6rem;
   line-height: 2.6rem;
   font-weight: 400;
-  background-color: var(--light-grey);
+  background-color: var(--body-background-color);
 }
 /* Globals */
 h1,
