@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState, useContext } from "react";
+import { Fragment, useContext } from "react";
 import classes from "./Home.module.css";
 import JobPost from "../Components/JobPost";
 import SearchFilter from "../Components/SearchFilter";
@@ -8,16 +8,7 @@ import Backdrop from "../Components/UI/Backdrop";
 import FilterModal from "../Components/UI/FilterModal";
 
 function Home() {
-  const [jobs, setJobs] = useState<[]>();
-  const { isModalOpen } = useContext(Context);
-
-  useEffect(() => {
-    fetch("./data.json")
-      .then((Response) => Response.json())
-      .then(async (data) => {
-        setJobs(data);
-      });
-  }, []);
+  const { jobs, isModalOpen } = useContext(Context);
 
   return (
     <Fragment>
@@ -38,6 +29,7 @@ function Home() {
             return (
               <JobPost
                 key={id}
+                id={id}
                 company={company}
                 logo={logo}
                 logoBackground={logoBackground}

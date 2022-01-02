@@ -1,7 +1,10 @@
 import classes from "./JobPost.module.css";
+import { useContext } from "react";
+import { Context } from "../store/context";
 
 type JobPostProps = {
   key: number;
+  id: number;
   company: string;
   logo: string;
   logoBackground: string;
@@ -13,6 +16,7 @@ type JobPostProps = {
 
 function JobPost(props: JobPostProps) {
   const {
+    id,
     company,
     logo,
     logoBackground,
@@ -22,8 +26,10 @@ function JobPost(props: JobPostProps) {
     location,
   } = props;
 
+  const { jobDetailHandler } = useContext(Context);
+
   return (
-    <div className={classes.container}>
+    <div className={classes.container} onClick={() => jobDetailHandler(id)}>
       <div
         className={classes["company-logo-container"]}
         style={{ backgroundColor: `${logoBackground}` }}

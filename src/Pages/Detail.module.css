@@ -1,0 +1,108 @@
+.company-container {
+  background-color: var(--job-post-color);
+  margin: -1rem 2.4rem 2.4rem;
+  border-radius: 0.6rem;
+  padding: 4.9rem 0 3.2rem;
+  position: relative;
+  text-align: center;
+}
+.company-logo-container {
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5rem;
+  position: absolute;
+  margin: -7.4rem calc(50% - 2.5rem) 0;
+}
+.company-name {
+  color: var(--position-title-color);
+  line-height: 2rem;
+  margin-bottom: 1.3rem;
+}
+.company-website {
+  color: var(--dark-grey);
+  margin-bottom: 2.7rem;
+}
+.company-container button {
+  background-color: #5964e010;
+  color: var(--violet);
+  padding: 1.6rem 2rem;
+}
+.job-description-container {
+  background-color: var(--job-post-color);
+  margin: 0 2.4rem 6.4rem;
+  border-radius: 0.6rem;
+  padding: 4rem 2.4rem;
+}
+.first-part {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5rem;
+}
+.post-time-job-type {
+  display: flex;
+  align-items: center;
+  column-gap: 1.2rem;
+  margin-bottom: 1.1rem;
+}
+.post-time-job-type p {
+  color: var(--dark-grey);
+  line-height: 1.6rem;
+}
+.post-time-job-type .point {
+  width: 0.4rem;
+  height: 0.4rem;
+  background-color: var(--dark-grey);
+  border-radius: 50%;
+}
+.position-name {
+  color: var(--position-title-color);
+  line-height: 2rem;
+  margin-bottom: 1.2rem;
+}
+.country-name {
+  color: var(--violet);
+  line-height: 1.4rem;
+}
+.second-part {
+  margin-top: 3.2rem;
+}
+.second-part p,
+.second-part ul li {
+  color: var(--job-description-text);
+}
+.second-part h3 {
+  color: var(--position-title-color);
+  line-height: 2rem;
+}
+.job-description,
+.job-requirements {
+  margin-bottom: 4rem;
+}
+.second-part h3 {
+  margin-bottom: 2.8rem;
+}
+.second-part ul {
+  padding: 3.2rem 0 0 2.4rem;
+  margin: 0;
+}
+.second-part ul li:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
+.second-part ul li::marker {
+  color: var(--violet);
+}
+.button-container {
+  background-color: var(--job-post-color);
+  padding: 2.5rem 2.4rem 2.3rem;
+}
+.button-container button {
+  width: 100%;
+}
+.job-not-found {
+  margin-top: 3rem;
+  text-align: center;
+  color: var(--position-title-color);
+}

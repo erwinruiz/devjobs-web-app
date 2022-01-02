@@ -25,6 +25,7 @@
     --position-title-color: var(--very-dark-blue);
     --contract-text-color: var(--very-dark-blue);
     --checkbox-color: var(--very-dark-blue);
+    --job-description-text: var(--dark-grey);
   }
 }
 /* Detect if the user has dark color theme */
@@ -38,6 +39,7 @@
     --position-title-color: var(--white);
     --contract-text-color: var(--white);
     --checkbox-color: var(--white);
+    --job-description-text: var(--gray);
   }
 }
 /* Switch to light theme by clicking the icon */
@@ -50,6 +52,7 @@
   --position-title-color: var(--very-dark-blue);
   --contract-text-color: var(--very-dark-blue);
   --checkbox-color: var(--very-dark-blue);
+  --job-description-text: var(--dark-grey);
 }
 /* Switch to dark theme by clicking the icon */
 [theme-mode="dark"] {
@@ -61,6 +64,7 @@
   --position-title-color: var(--white);
   --contract-text-color: var(--white);
   --checkbox-color: var(--white);
+  --job-description-text: var(--gray);
 }
 
 html {
