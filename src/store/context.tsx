@@ -30,11 +30,22 @@ const Context = React.createContext({
   modalHandler: (): void => {},
   jobDetailHandler: (id: number): void => {},
   jobs: jobsInitialState,
+  selectedFilters: { title: "", location: "", fulltime: false },
+  jobFiltersHandler: (filters: {
+    title: string;
+    location: string;
+    fulltime: boolean;
+  }): void => {},
 });
 
 const ContextProvider = (props: { children: ReactNode }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [jobs, setJobs] = useState(jobsInitialState);
+  const [selectedFilters, setSelectedFilters] = useState({
+    title: "",
+    location: "",
+    fulltime: false,
+  });
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -53,6 +64,14 @@ const ContextProvider = (props: { children: ReactNode }) => {
     navigate(`/job-detail/${id}`);
   };
 
+  const jobFiltersHandler = (filters: {
+    title: string;
+    location: string;
+    fulltime: boolean;
+  }) => {
+    setSelectedFilters(filters);
+  };
+
   return (
     <Context.Provider
       value={{
@@ -60,6 +79,8 @@ const ContextProvider = (props: { children: ReactNode }) => {
         modalHandler,
         jobDetailHandler,
         jobs,
+        selectedFilters,
+        jobFiltersHandler,
       }}
     >
       {props.children}
