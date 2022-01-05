@@ -2,6 +2,8 @@ import classes from "./SearchFilter.module.css";
 import { useContext, useState } from "react";
 import { Context } from "../store/context";
 import SearchInput from "./UI/SearchInput";
+import Button from "./UI/Button";
+import Checkbox from "./UI/Checkbox";
 
 function SearchFilter() {
   const { modalHandler, jobFiltersHandler, selectedFilters } =
@@ -22,13 +24,22 @@ function SearchFilter() {
     });
   };
 
+  const checkboxHandler = () => {
+    setEnteredData((state) => {
+      return { ...state, fulltime: !state.fulltime };
+    });
+  };
+
   return (
     <div className={classes.container}>
-      <SearchInput
-        placeholder="Filter by title…"
-        isFor="title"
-        setData={enteredDataHandler}
-      />
+      <div className={classes["title-filter-container"]}>
+        <img src="./assets/desktop/icon-search.svg" alt="search icon" />
+        <SearchInput
+          placeholder="Filter by title…"
+          isFor="title"
+          setData={enteredDataHandler}
+        />
+      </div>
       <div className={classes["right-side"]}>
         <div className={classes["filter-options"]} onClick={filterHandler}>
           <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
@@ -50,6 +61,25 @@ function SearchFilter() {
               fillRule="nonzero"
             />
           </svg>
+        </div>
+      </div>
+      <div className={classes["tablet-desktop-options"]}>
+        <div className={classes["location-filter-container"]}>
+          <img src="./assets/desktop/icon-location.svg" alt="location icon" />
+          <SearchInput
+            placeholder="Filter by location…"
+            isFor="location"
+            setData={enteredDataHandler}
+          />
+        </div>
+        <Checkbox
+          text="Full Time"
+          onChecked={checkboxHandler}
+          fulltime={enteredData.fulltime}
+          className={classes.checkbox}
+        />
+        <div className={classes["button-container"]}>
+          <Button text="Search" onClick={searchHandler} />
         </div>
       </div>
     </div>

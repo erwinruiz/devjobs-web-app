@@ -4,6 +4,7 @@ import classes from "./FilterModal.module.css";
 import SearchInput from "./SearchInput";
 import { useContext, useState } from "react";
 import { Context } from "../../store/context";
+import Checkbox from "./Checkbox";
 
 function FilterModal() {
   const { jobFiltersHandler, selectedFilters, modalHandler } =
@@ -37,17 +38,11 @@ function FilterModal() {
           setData={enteredDataHandler}
         />
       </div>
-      <div className={classes["full-time-checkbox-container"]}>
-        <label className={classes["checkbox-container"]}>
-          <input
-            type="checkbox"
-            onChange={checkboxHandler}
-            checked={enteredData.fulltime}
-          />
-          <span className={classes.checkmark}></span>
-        </label>
-        <p>Full Time Only</p>
-      </div>
+      <Checkbox
+        text="Full Time Only"
+        onChecked={checkboxHandler}
+        fulltime={enteredData.fulltime}
+      />
       <div className={classes["button-container"]}>
         <Button text="Search" onClick={searchHandler} />
       </div>

@@ -9,3 +9,9 @@
   background-color: rgba(0, 0, 0, 0.4965);
   transition: all ease-in-out 250ms;
 }
+
+@media (min-width: 768px) {
+  .backdrop {
+    display: none;
+  }
+}

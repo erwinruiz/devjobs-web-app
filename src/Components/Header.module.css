@@ -9,3 +9,11 @@
   align-items: center;
   column-gap: 1.6rem;
 }
+
+/* Tablet */
+@media (min-width: 768px) {
+  .header {
+    padding: 4.2rem 4rem 7.2rem;
+    background-image: url("../assets/tablet/bg-pattern-header.svg");
+  }
+}

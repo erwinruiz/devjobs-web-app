@@ -40,3 +40,48 @@
 .search-icon-container:hover {
   background-color: var(--light-violet);
 }
+.title-filter-container img,
+.tablet-desktop-options {
+  display: none;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .container {
+    /* margin: -4rem 4rem 0 4rem; */
+    margin: -4rem auto 0;
+    width: 68.9rem;
+    padding: 0 1.6rem 0 0;
+    justify-content: left;
+  }
+  .right-side {
+    display: none;
+  }
+  .title-filter-container img {
+    display: initial;
+  }
+  .tablet-desktop-options {
+    display: flex;
+    align-items: center;
+  }
+  .title-filter-container,
+  .location-filter-container {
+    display: flex;
+    align-items: center;
+    column-gap: 1.6rem;
+    border-right: 0.1rem solid #6e809820;
+    height: 8rem;
+    padding-left: 2.4rem;
+  }
+  .title-filter-container input,
+  .location-filter-container input {
+    width: 16rem;
+  }
+  .checkbox {
+    padding: 0 !important;
+    margin: 0 2rem;
+  }
+  .button-container button {
+    padding: 1.6rem 1.4rem;
+  }
+}
