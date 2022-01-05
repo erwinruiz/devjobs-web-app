@@ -35,10 +35,12 @@ function Detail() {
         >
           <img src={logo} alt="company logo" />
         </div>
-        <h3 className={classes["company-name"]}>{company}</h3>
-        <p className={classes["company-website"]}>
-          {`${company}`.replace(/ +/g, "").toLowerCase()}.com
-        </p>
+        <div className={classes["company-name-website"]}>
+          <h3 className={classes["company-name"]}>{company}</h3>
+          <p className={classes["company-website"]}>
+            {`${company}`.replace(/ +/g, "").toLowerCase()}.com
+          </p>
+        </div>
         <Button text="Company Site" />
       </div>
       <div className={classes["job-description-container"]}>
@@ -77,6 +79,10 @@ function Detail() {
         </div>
       </div>
       <div className={classes["button-container"]}>
+        <div className={classes["bottom-company-information"]}>
+          <h3>{position}</h3>
+          <p>{company}</p>
+        </div>
         <Button text="Apply Now" />
       </div>
     </Fragment>

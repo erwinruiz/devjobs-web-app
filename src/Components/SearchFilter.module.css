@@ -68,7 +68,7 @@
   .location-filter-container {
     display: flex;
     align-items: center;
-    column-gap: 1.6rem;
+    column-gap: 1.2rem;
     border-right: 0.1rem solid #6e809820;
     height: 8rem;
     padding-left: 2.4rem;
