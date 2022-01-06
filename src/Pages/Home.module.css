@@ -21,3 +21,12 @@
     row-gap: 6.5rem;
   }
 }
+
+/* Desktop */
+@media (min-width: 1440px) {
+  .job-posts-container {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    width: 111rem;
+  }
+}

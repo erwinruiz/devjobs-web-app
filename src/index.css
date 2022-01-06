@@ -83,6 +83,7 @@ body {
   line-height: 2.6rem;
   font-weight: 400;
   background-color: var(--body-background-color);
+  overflow-x: hidden;
 }
 /* Globals */
 h1,

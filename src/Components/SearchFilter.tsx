@@ -34,11 +34,20 @@ function SearchFilter() {
     <div className={classes.container}>
       <div className={classes["title-filter-container"]}>
         <img src="./assets/desktop/icon-search.svg" alt="search icon" />
-        <SearchInput
-          placeholder="Filter by title…"
-          isFor="title"
-          setData={enteredDataHandler}
-        />
+        <div className={classes["input-title-short-text"]}>
+          <SearchInput
+            placeholder="Filter by title…"
+            isFor="title"
+            setData={enteredDataHandler}
+          />
+        </div>
+        <div className={classes["input-title-large-text"]}>
+          <SearchInput
+            placeholder="Filter by title, companies, expertise…"
+            isFor="title"
+            setData={enteredDataHandler}
+          />
+        </div>
       </div>
       <div className={classes["right-side"]}>
         <div className={classes["filter-options"]} onClick={filterHandler}>
@@ -72,12 +81,22 @@ function SearchFilter() {
             setData={enteredDataHandler}
           />
         </div>
-        <Checkbox
-          text="Full Time"
-          onChecked={checkboxHandler}
-          fulltime={enteredData.fulltime}
-          className={classes.checkbox}
-        />
+        <div className={classes["checkbox-short-text"]}>
+          <Checkbox
+            text="Full Time"
+            onChecked={checkboxHandler}
+            fulltime={enteredData.fulltime}
+            className={classes.checkbox}
+          />
+        </div>
+        <div className={classes["checkbox-full-text"]}>
+          <Checkbox
+            text="Full Time Only"
+            onChecked={checkboxHandler}
+            fulltime={enteredData.fulltime}
+            className={classes.checkbox}
+          />
+        </div>
         <div className={classes["button-container"]}>
           <Button text="Search" onClick={searchHandler} />
         </div>

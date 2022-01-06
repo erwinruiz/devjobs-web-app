@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   margin: -4rem 2.4rem 0 2.4rem;
-  padding: 1.6rem 1.6rem 1.6rem 2.4rem;
+  padding: 0 1.6rem 0 2.4rem;
   background-color: var(--search-filter-color);
   border-radius: 0.6rem;
 }
@@ -17,6 +17,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.title-filter-container input,
+.location-filter-container input {
+  height: 8rem;
+  cursor: pointer;
 }
 .filter-options:hover {
   cursor: pointer;
@@ -44,15 +49,17 @@
 .tablet-desktop-options {
   display: none;
 }
+.input-title-large-text {
+  display: none;
+}
 
 /* Tablet */
 @media (min-width: 768px) {
   .container {
-    /* margin: -4rem 4rem 0 4rem; */
-    margin: -4rem auto 0;
-    width: 68.9rem;
+    max-width: 76.8rem;
+    margin: -4rem 4rem 0 4rem;
     padding: 0 1.6rem 0 0;
-    justify-content: left;
+    justify-content: center;
   }
   .right-side {
     display: none;
@@ -64,13 +71,15 @@
     display: flex;
     align-items: center;
   }
+  .checkbox-full-text {
+    display: none;
+  }
   .title-filter-container,
   .location-filter-container {
     display: flex;
     align-items: center;
     column-gap: 1.2rem;
     border-right: 0.1rem solid #6e809820;
-    height: 8rem;
     padding-left: 2.4rem;
   }
   .title-filter-container input,
@@ -83,5 +92,53 @@
   }
   .button-container button {
     padding: 1.6rem 1.4rem;
+  }
+}
+
+@media (min-width: 848px) {
+  .container {
+    margin: -4rem auto 0;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 111rem;
+    padding: 0 1.6rem 0 0;
+  }
+  .title-filter-container,
+  .location-filter-container {
+    column-gap: 1.6rem;
+  }
+  .title-filter-container {
+    padding-left: 3.2rem;
+  }
+  .location-filter-container {
+    padding-left: 2.3rem;
+  }
+  .title-filter-container input {
+    width: 39rem;
+  }
+  .location-filter-container input {
+    width: 24.3rem;
+  }
+  .checkbox {
+    margin: 0 2.6rem 0 3.2rem;
+  }
+  .checkbox-short-text {
+    display: none;
+  }
+  .checkbox-full-text {
+    display: initial;
+  }
+  .button-container button {
+    padding: 1.6rem 3.5rem;
+  }
+  .input-title-short-text {
+    display: none;
+  }
+  .input-title-large-text {
+    display: initial;
   }
 }
