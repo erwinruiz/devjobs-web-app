@@ -9,6 +9,9 @@
   align-items: center;
   column-gap: 1.6rem;
 }
+.logo:hover {
+  cursor: pointer;
+}
 
 /* Tablet */
 @media (min-width: 768px) {

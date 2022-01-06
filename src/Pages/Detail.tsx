@@ -79,11 +79,13 @@ function Detail() {
         </div>
       </div>
       <div className={classes["button-container"]}>
-        <div className={classes["bottom-company-information"]}>
-          <h3>{position}</h3>
-          <p>{company}</p>
+        <div className={classes['button-inside-container']}>
+          <div className={classes["bottom-company-information"]}>
+            <h3>{position}</h3>
+            <p>{company}</p>
+          </div>
+          <Button text="Apply Now" />
         </div>
-        <Button text="Apply Now" />
       </div>
     </Fragment>
   );

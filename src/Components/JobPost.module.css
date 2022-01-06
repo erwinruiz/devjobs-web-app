@@ -34,6 +34,10 @@
   line-height: 2rem;
   margin-bottom: 1.7rem;
 }
+.position-name:hover {
+  color: var(--dark-grey);
+  cursor: pointer;
+}
 .company-name {
   color: var(--dark-grey);
   line-height: 1.6rem;

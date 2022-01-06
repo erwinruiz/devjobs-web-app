@@ -29,7 +29,7 @@ function JobPost(props: JobPostProps) {
   const { jobDetailHandler } = useContext(Context);
 
   return (
-    <div className={classes.container} onClick={() => jobDetailHandler(id)}>
+    <div className={classes.container}>
       <div
         className={classes["company-logo-container"]}
         style={{ backgroundColor: `${logoBackground}` }}
@@ -41,7 +41,12 @@ function JobPost(props: JobPostProps) {
         <div className={classes.point}></div>
         <p>{contract}</p>
       </div>
-      <h3 className={classes["position-name"]}>{position}</h3>
+      <h3
+        className={classes["position-name"]}
+        onClick={() => jobDetailHandler(id)}
+      >
+        {position}
+      </h3>
       <p className={classes["company-name"]}>{company}</p>
       <h4 className={classes["country-name"]}>{location}</h4>
     </div>

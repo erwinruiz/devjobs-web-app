@@ -119,6 +119,7 @@
     align-items: center;
     justify-content: space-between;
     height: 14rem;
+    max-width: 73rem;
   }
   .company-logo-container {
     height: 14rem;
@@ -146,6 +147,7 @@
   .job-description-container {
     margin: 0 4rem 5.3rem;
     padding: 4.8rem;
+    max-width: 73rem;
   }
   .first-part {
     flex-direction: row;
@@ -158,10 +160,14 @@
     margin-bottom: 1.4rem;
   }
   .button-container {
+    padding: 2.3rem 4rem;
+  }
+  .button-inside-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2.3rem 4rem;
+    max-width: 73rem;
+    margin: 0 auto;
   }
   .button-container button {
     padding: 1.6rem 2.8rem;
@@ -177,5 +183,14 @@
   }
   .bottom-company-information p {
     color: var(--dark-grey);
+  }
+}
+
+@media (min-width: 810px) {
+  .company-container {
+    margin: -4rem auto 3.2rem;
+  }
+  .job-description-container {
+    margin: 0 auto 5.3rem;
   }
 }
