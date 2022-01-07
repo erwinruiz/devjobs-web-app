@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-between;
   background-image: url("../assets/mobile/bg-pattern-header.svg");
+  background-repeat: no-repeat;
 }
 .toggle-theme-container {
   display: flex;
@@ -27,7 +28,7 @@
 @media (min-width: 1440px) {
   .header {
     width: 144rem;
-    padding: 4.5rem 16.5rem 7.2rem;
+    padding: 6.2rem 16.5rem 7.2rem;
     background-image: url("../assets/desktop/bg-pattern-header.svg");
   }
 }
