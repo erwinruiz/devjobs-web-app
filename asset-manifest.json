@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/devjobs-web-app/static/css/main.6606caca.css",
+    "main.js": "/devjobs-web-app/static/js/main.c7b60d9a.js",
+    "static/media/bg-pattern-header.svg": "/devjobs-web-app/static/media/bg-pattern-header.ea1134f14277d29c5f40.svg",
+    "index.html": "/devjobs-web-app/index.html",
+    "main.6606caca.css.map": "/devjobs-web-app/static/css/main.6606caca.css.map",
+    "main.c7b60d9a.js.map": "/devjobs-web-app/static/js/main.c7b60d9a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6606caca.css",
+    "static/js/main.c7b60d9a.js"
+  ]
+}
