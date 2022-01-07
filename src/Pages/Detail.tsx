@@ -11,7 +11,7 @@ function Detail() {
   const selectedJob = jobs.find((job) => job.id === parseInt(jobId!));
 
   if (!selectedJob)
-    return <h1 className={classes["job-not-found"]}>Job not found</h1>;
+    return <h2 className={classes["job-not-found"]}>Job not found</h2>;
 
   const {
     logoBackground,
@@ -51,7 +51,7 @@ function Detail() {
               <div className={classes.point}></div>
               <p>{contract}</p>
             </div>
-            <h3 className={classes["position-name"]}>{position}</h3>
+            <h1 className={classes["position-name"]}>{position}</h1>
             <h4 className={classes["country-name"]}>{location}</h4>
           </div>
           <Button text="Apply Now" />

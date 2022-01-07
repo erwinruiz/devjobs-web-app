@@ -13,7 +13,12 @@ function Checkbox(props: CheckboxProps) {
   return (
     <div className={`${classes["full-time-checkbox-container"]} ${className}`}>
       <label className={classes["checkbox-container"]}>
-        <input type="checkbox" onChange={onChecked} checked={fulltime} />
+        <input
+          type="checkbox"
+          aria-label="fulltime"
+          onChange={onChecked}
+          checked={fulltime}
+        />
         <span className={classes.checkmark}></span>
       </label>
       <p>{text}</p>

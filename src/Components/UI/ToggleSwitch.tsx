@@ -21,6 +21,7 @@ function ToggleSwitch() {
     <label className={classes.switch}>
       <input
         type="checkbox"
+        aria-label="color theme"
         defaultChecked={isDarkMode}
         onChange={toggleThemeHandler}
       />

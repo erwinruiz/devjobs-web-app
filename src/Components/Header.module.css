@@ -4,6 +4,7 @@
   justify-content: space-between;
   background-image: url("../assets/mobile/bg-pattern-header.svg");
   background-repeat: no-repeat;
+  background-position: center;
 }
 .toggle-theme-container {
   display: flex;

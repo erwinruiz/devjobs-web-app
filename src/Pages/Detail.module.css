@@ -59,6 +59,7 @@
 }
 .position-name {
   color: var(--position-title-color);
+  font-size: 2rem;
   line-height: 2rem;
   margin-bottom: 1.2rem;
 }
