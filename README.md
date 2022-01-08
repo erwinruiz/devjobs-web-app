@@ -56,16 +56,17 @@ The designs were created to the following widths:
 
 #### Desktop
 
-![](./screenshots/home-page-desktop-design.png)
-![](./screenshots/job-detail-page-desktop-design.png)
-![](./screenshots/search-by-title-home-page-desktop-design.png)
+<img src="./screenshots/home-page-desktop-design.png" alt="home page" width="1440" />
+<img src="./screenshots/job-detail-page-desktop-design.png" alt="job detail page" width="1440" />
+<img src="./screenshots/search-by-title-home-page-desktop-design.png" alt="search by title home page" width="1440" />
 
 #### Tablet
 
-![](./screenshots/home-page-tablet-design.png)
-![](./screenshots/job-detail-page-tablet-design.png)
+<img src="./screenshots/home-page-tablet-design.png" alt="home page" width="768" />
+<img src="./screenshots/job-detail-page-tablet-design.png" alt="job detail page" width="768" />
 
 #### Mobile
 
-![](./screenshots/home-page-mobile-design.png)
-![](./screenshots/job-detail-page-mobile-design.png)
+<img src="./screenshots/home-page-mobile-design.png" alt="home page" width="375" />
+<img src="./screenshots/job-detail-page-mobile-design.png" alt="job detail page" width="375" />
+
