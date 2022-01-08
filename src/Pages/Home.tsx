@@ -18,6 +18,12 @@ function Home() {
     filteredJobs = jobs.filter((job) =>
       job.position.toLowerCase().includes(selectedFilters.title.toLowerCase())
     );
+
+    if (filteredJobs.length < 1) {
+      filteredJobs = jobs.filter((job) =>
+        job.company.toLowerCase().includes(selectedFilters.title.toLowerCase())
+      );
+    }
   }
   if (selectedFilters.location !== "") {
     if (filteredJobs) {
